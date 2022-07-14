@@ -65,6 +65,8 @@ COMPLEX_TYPES = {
         'DepartmentSearchBasic',
         'ItemSearchBasic', 'ItemSearchRowBasic',
         'ClassificationSearchBasic',
+        'CurrencyRateSearchBasic',
+        'ConsolidatedExchangeRateSearchBasic'
     ],
 
     'ns6': [
