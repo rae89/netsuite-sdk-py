@@ -418,7 +418,7 @@ class NetSuiteClient:
         _type_name = type_name[0].lower() + type_name[1:]
         if not _type_name in SEARCH_RECORD_TYPES:
             raise NetSuiteTypeError('{} is not a searchable NetSuite type!'.format(type_name))
-        if type_name == "CurrencyRate":
+        if type_name in ("CurrencyRate", "ConsolidatedExchangeRate"):
             search_cls_name = '{}SearchBasic'.format(type_name)
         else:
             search_cls_name = '{}Search'.format(type_name)
